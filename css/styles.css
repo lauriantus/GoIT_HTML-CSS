@@ -1,0 +1,52 @@
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';     /*Устанавливает семейство шрифта*/
+        font-style: normal;     /*каким образом шрифт должен быть стилизирован*/
+        font-weight: 700;       /*насыщенность шрифта*/
+        font-size: 26px;        /*размер шрифта элемента*/
+        line-height: 31px;      /*величина пространства между строками*/
+        letter-spacing: 0.03em; /*стандартное межбуквенное расстояние для текущего шрифта*/
+    
+        color: #212121;       /*цвет*/
+}
+
+.web/*синий цвет для части логотипа*/{
+        color: #2196F3;
+}
+
+/*
+Пропись к шрифту:
+font-family: 'Roboto', sans-serif;
+*/
+
+.nav {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #212121;
+
+   /* background: #2196F3;*/
+}
+.nav1 {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    /* background: #2196F3;*/
+}
+.nav_ {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+}
+/*
+ font-family: 'Roboto';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 16px;
+ letter-spacing: 0.02em;*/
