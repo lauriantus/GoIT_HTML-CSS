@@ -1,52 +1,110 @@
-.logo {
-    text-decoration: none;
-    font-family: 'Raleway';     /*Устанавливает семейство шрифта*/
-        font-style: normal;     /*каким образом шрифт должен быть стилизирован*/
-        font-weight: 700;       /*насыщенность шрифта*/
-        font-size: 26px;        /*размер шрифта элемента*/
-        line-height: 31px;      /*величина пространства между строками*/
-        letter-spacing: 0.03em; /*стандартное межбуквенное расстояние для текущего шрифта*/
-    
-        color: #212121;       /*цвет*/
-}
+/* !!!общее */
 
-.web/*синий цвет для части логотипа*/{
-        color: #2196F3;
-}
+    /* шрифт, цвет, отключение эффектов текста, отключение маркеров на всей странице*/
+    body, a, li, button{
+        font-family: 'Roboto', sans-serif;
+        color: #212121;
+        text-decoration: none;
+        list-style-type: none;
+    }
 
-/*
-Пропись к шрифту:
-font-family: 'Roboto', sans-serif;
-*/
+    /* измнение поведения курсора при наведении на ссылку */
+    a, button {
+        cursor: pointer;
+    }
+    /* центрирование */
+    h2, 
+    .hero {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17em;
+        text-align: center;
+    }
+   .list-masters,
+   .list-descr,
+   .list-values,
+   .link-auth,
+   .link-site {
+       display: inline-block;
+   }
+/* !header - логотип, навигация по сайту, контакты */        
+    /* логотип и компоненты логотипа*/
+    .logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
 
-.nav {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: #212121;
-
-   /* background: #2196F3;*/
-}
-.nav1 {
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
+    }
+    .logo-web {
+        color:#2196F3
+    }    
+    /* Особенности шрифта в ссылках хэдера */
+    .link-site, .link-auth, .contact{
     font-weight: 500;
     font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
-
-    /* background: #2196F3;*/
-}
-.nav_ {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    }
+    /* Таб и наведение мышки на ссылки в хэдере */
+    .current:hover, .current:focus {
+    color: #2196F3;
+    }
+    /* цвет ссылок авторизации */
+    .link-auth>a, .contact>a, .work-master{
     color: #757575;
+    }
+
+/* main */
+    /* hero */
+    .hero {
+        background-color: #2F303A;
+        color: #FFFFFF;
+        letter-spacing: 0.06em;
+    }
+    .h-hero {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+
+        text-transform: uppercase;
+    }
+    .button {
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        background:#2196F3;
+    }
+
+/* общее */
+.list-values, .descr, .masters {
+    letter-spacing: 0.03em;
 }
-/*
- font-family: 'Roboto';
- font-style: normal;
- font-weight: 500;
- font-size: 14px;
- line-height: 16px;
- letter-spacing: 0.02em;*/
+
+    /* values */
+    .h-values {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .p-values {
+        line-height: 1.71;
+        font-size: 14px;
+
+        color:#757575;
+
+    }
+
+    /* masters */
+    .list-masters {
+        line-height: 1.19em;
+        text-align: center;
+    }
+    .name-master {
+        font-weight: 500;
+    }
+    /* footer */
