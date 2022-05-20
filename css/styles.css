@@ -1,31 +1,85 @@
+/* Палитра */
+:root {
+    /* colors */
+    --primary-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --secondary-text-color: #757575;
+    --accent-backgroubd-color: #2F303A;
+    --secondary-background-color: #F5F4FA;
+}
+/* body */
+body {
+    color: var(--primary-text-color);
+}
+.link:hover,
+.link:focus,
+.link.current {
+    color: var(--accent-text-color);
+}
+    /* header */
+    .header {
+        background: var(--primary-white-color);
+    }
+        /* logo */
+        .logo {
+            color: var(--accent-text-color);
+        }
+        .logo-main {
+            color: var(--primary-text-color);
+        }
+        .logo-bot {
+            color: var(--primary-white-color);
+        }
+        /* nav */
+        .list-nav a{
+            color: var(--primary-text-color);
+        }
+        /* auth */
+        .list-auth a{
+            color: var(--secondary-text-color);
+        
+        }
+    /* main */
+    .section {
+        background: var(--secondary-background-color);
+    }
+        /* hero */
+        .hero {
+            background: var(--accent-backgroubd-color);
+            color: var(--primary-white-color);
+        }
+        .button {
+            color: var(--primary-white-color);
+            background: var(--accent-text-color);
+        }
+        /* values */
+        .p-values {
+            color: var(--secondary-text-color);
+        }
+        /* masters */
+        .prof-master {
+            color: var(--secondary-text-color);
+        }
+    .footer {
+        background:var(--accent-backgroubd-color);
+    }
+        .list-adress a{
+            color: var(--secondary-text-color);
+        }
+
+
 /* !!!общее */
 
     /* шрифт, цвет, отключение эффектов текста, отключение маркеров на всей странице*/
-    body, a, li, button{
+    body, a, ul, button{
         font-family: 'Roboto', sans-serif;
-        color: #212121;
         text-decoration: none;
         list-style-type: none;
     }
-
-    /* измнение поведения курсора при наведении на ссылку */
-    a, button {
-        cursor: pointer;
-    }
-    /* центрирование */
-    h2, 
-    .hero {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17em;
-        text-align: center;
-    }
-   .list-masters,
-   .list-descr,
-   .list-values,
-   .link-auth,
-   .link-site {
-       display: inline-block;
+/* Таб и наведение мышки на ссылки в хэдере */
+   .link:hover, .link:focus {
+       cursor: pointer;
    }
 /* !header - логотип, навигация по сайту, контакты */        
     /* логотип и компоненты логотипа*/
@@ -35,39 +89,22 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-
     }
-    .logo-web {
-        color:#2196F3
-    }    
     /* Особенности шрифта в ссылках хэдера */
-    .link-site, .link-auth, .contact{
+    .list-nav, .list-auth {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     }
-    /* Таб и наведение мышки на ссылки в хэдере */
-    .current:hover, .current:focus {
-    color: #2196F3;
-    }
-    /* цвет ссылок авторизации */
-    .link-auth>a, .contact>a, .work-master{
-    color: #757575;
-    }
-
 /* main */
     /* hero */
-    .hero {
-        background-color: #2F303A;
-        color: #FFFFFF;
-        letter-spacing: 0.06em;
-    }
-    .h-hero {
+    .name-hero {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-
+        text-align: center;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
     }
     .button {
@@ -77,34 +114,62 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color: #FFFFFF;
-        background:#2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
     }
 
 /* общее */
 .list-values, .descr, .masters {
     letter-spacing: 0.03em;
 }
-
     /* values */
-    .h-values {
-        text-transform: uppercase;
+    .names-values {
+        font-weight: 700;
         font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+
+        text-transform: uppercase;
     }
     .p-values {
-        line-height: 1.71;
+        font-weight: 400;
         font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
 
-        color:#757575;
-
+    /* description */
+    .name-description {
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-align: center;
     }
 
     /* masters */
-    .list-masters {
-        line-height: 1.19em;
+    .name-masters {
+        font-size: 36px;
+        line-height: 1.17;
         text-align: center;
+        letter-spacing: 0.03em;
+    }
+    .list-masters {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
     }
     .name-master {
         font-weight: 500;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    } 
+    .prof-master {
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
     }
+
     /* footer */
+    .list-adress {
+
+    }

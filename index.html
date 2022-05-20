@@ -12,17 +12,17 @@
   <body>
 <!-- ✓Логотип, ссылочки, контакты -->
     <header class="header">
-        <a lang="en" href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+        <a lang="en" href="./index.html" class="logo">Web<span class="logo-main">Studio</span></a>
         <nav>
-          <ul>
-            <li class="link-site"><a href="/index.html">Студия</a></li>
-            <li class="link-site"><a href="./portfolio.html">Портфолио</a></li>
-            <li class="link-site"><a href="#">Контакты</a></li>
+          <ul class="list-nav">
+            <li><a class="link current" href="/index.html">Студия</a></li>
+            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="#">Контакты</a></li>
           </ul>
         </nav>
-          <ul>
-            <li class="link-auth"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="link-auth"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <ul class="list-auth">
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
     </header>
 
@@ -30,12 +30,12 @@
     <main>
     <!--Будет блок с фоном и кнопкой с главной темой-->
         <section class="hero">
-          <h1 class="h-hero">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="name-hero">Эффективные решения для вашего бизнеса</h1>
           <button class="button" type="button">Заказать услугу</button>
         </section>
 
     <!--Ценности компаниии-->
-        <section class="values">
+        <section class="section">
           <h2 hidden>Ценности</h2>
           <ul>
             <li class="list-values">
@@ -58,51 +58,51 @@
         </section>
  
     <!--Краткое описание работ-->
-        <section class="descr">
-          <h2>Чем мы занимаемся</h2>
+        <section class="section">
+          <h2 class="name-description">Чем мы занимаемся</h2>
           <ul>
-            <li class="list-descr"> <img src="./images/adapt.jpg" width="370" alt="Адаптация под разнообразные платформы"></li>
-            <li class="list-descr"> <img src="./images/design.jpg" width="370" alt="Дизайн"></li>
-            <li class="list-descr"> <img src="./images/prog.jpg" width="370" alt="Программирование и создание алгоритма и кода"></li>
+            <li> <img src="./images/adapt.jpg" width="370" alt="Адаптация под разнообразные платформы"></li>
+            <li> <img src="./images/design.jpg" width="370" alt="Дизайн"></li>
+            <li> <img src="./images/prog.jpg" width="370" alt="Программирование и создание алгоритма и кода"></li>
           </ul>
         </section>
 
     <!--Описание команды. Кто есть кто-->
-        <section class="masters">
-          <h2>Наша команда</h2>
-          <ul>
-            <li class="list-masters">
+        <section class="section">
+          <h2 class="name-masters">Наша команда</h2>
+          <ul class="list-masters">
+            <li>
               <img src="./images/ihor.jpg" width="270" height="260" alt="Игорь Демьяненко">
               <h3 class="name-master">Игорь Демьяненко</h3>
-              <p lang="en" class="work-master">Product Designer</p>
+              <p lang="en" class="prof-master">Product Designer</p>
             </li>
-            <li class="list-masters">
+            <li>
               <img src="./images/olga.jpg" width="270" height="260" alt="Ольга репина">
               <h3 class="name-master">Ольга Репина</h3>
-              <p lang="en" class="work-master">Frontend Developer</p>
+              <p lang="en" class="prof-master">Frontend Developer</p>
             </li>
-            <li class="list-masters">
+            <li>
               <img src="./images/nickolay.jpg" width="270" height="260" alt="Николай Тарасов">
               <h3 class="name-master">Николай Тарасов</h3>
-              <p lang="en" class="work-master">Marketing</p>
+              <p lang="en" class="prof-master">Marketing</p>
             </li>
-            <li class="list-masters">
+            <li>
               <img src="./images/michail.jpg" width="270" height="260" alt="Михаил Ермаков">
               <h3 class="name-master">Михаил Ермаков</h3>
-              <p lang="en" class="work-master">UI Designer</p>
+              <p lang="en" class="prof-master">UI Designer</p>
             </li>
           </ul>
         </section>
     </main>
 
-    <footer>
-        <a lang="en" href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+    <footer class="footer">
+        <a lang="en" href="./index.html" class="logo">Web<span class="logo-bot">Studio</span></a>
       <address>
-        <ul>
-          <li class="contact"><a href="https://goo.gl/maps/QEpF4U5i566rZsjTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси
+        <ul class="list-adress">
+          <li><a class="link" href="https://goo.gl/maps/QEpF4U5i566rZsjTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси
               Украинки, 26</a></li>
-          <li class="contact"><a href="mailto:info@example.com">info@example.com</a></li>
-          <li class="contact"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
     </footer>
