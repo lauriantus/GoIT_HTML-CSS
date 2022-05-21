@@ -10,27 +10,54 @@
 
   --primary-font: 'Roboto', sans-serif;
 }
-/* общее */
-body {
+
+/* стандартный шрифт, расстояние в тексте, цвета текста и фона */
+body{
   color: var(--primary-text-color);
   font-family: var(--primary-font);
+  background: var(--secondary-background-color);
   letter-spacing: 0.03em;
+  font-size: 16px;
 }
+/* Цвет, фон и стиль текста для кнопок(общее) */
+.button, .filter-button {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+/* Эффект для кнопки в индекс(hero) */
+.button:hover, .button:focus {
+  cursor: pointer;
+}
+
+/* Эффекты для кнопок фильтра(portfolio.html) */
+.filter-button:hover, .filter-button:focus {
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background: var(--accent-text-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+              0px 1px 2px rgba(0, 0, 0, 0.08),
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 /* отключение маркеров на списках */
 ul {
   list-style-type: none;
 }
-/* отключение єффектов для ссылок(и логотипа тоже) */
+
+/* отключение эффектов для ссылок(и логотипа тоже) */
 .link,
 .logo {
   text-decoration: none;
 }
+
 /* эффект при наведении или фокусе. Также эффект текущей страницы. */
 .link:hover,
 .link:focus,
 .link.current {
   color: var(--accent-text-color);
-  cursor: pointer;
 }
 /* header */
 .header {
@@ -83,11 +110,9 @@ ul {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: inherit;
-}
-/* общее для всех секций */
-.section {
-  background: var(--secondary-background-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* преимущества (заголовок скрыт, потому отсутствует селектор*/
 .h-values {
@@ -142,7 +167,25 @@ ul.list-masters {
 .name-block {
   color: var(--primary-text-color);
 }
-
 .category {
   color: var(--secondary-text-color);
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--primary-text-color);
+
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+}
+.filter-button:hover {
+  color:var(--primary-white-color) ;
+  background: var(--accent-text-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+              0px 1px 2px rgba(0, 0, 0, 0.08), 
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }

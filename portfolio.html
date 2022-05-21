@@ -19,8 +19,8 @@
       <a lang="en" href="./index.html" class="logo">Web<span class="logo-main">Studio</span></a>
       <nav>
         <ul class="list-nav">
-          <li><a class="link current" href="/index.html">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link" href="/index.html">Студия</a></li>
+          <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
           <li><a class="link" href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -32,97 +32,119 @@
 
     <!--Уникальный контент-->
     <main>
-      <!--Сортировка данных на вкладке-->
-      <section class="filter">
-        <ul class="sort">
-          <li><button class="buttons" type="button">Все</button></li>
-          <li><button class="buttons" type="button">Веб-сайты</button></li>
-          <li><button class="buttons" type="button">Приложения</button></li>
-          <li><button class="buttons" type="button">Дизайн</button></li>
-          <li><button class="buttons" type="button">Маркеттинг</button></li>
-        </ul>
-      </section>
-
-      <!--Веб-сайты, дизайн, приложения, маркетинг  и их сортировка-->
-      <section class="box-filter">
-        <h2 class="filter-name"></h2>
-        <ul class="blocks">
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/technocrack.jpg" alt="ноутбука с веб-сайтом" />
-              <h3 class="name-block">Технокряк</h3>
-              <p class="category">Веб-сайт</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/poster.jpg" alt="сопротивление двух баскетболистов" />
-              <h3 class="name-block">Постер New Orlean vs Golden Star</h3>
-              <p class="category">Дизайн</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/restaurant-seafood.jpg" alt="" />
-              <h3 class="name-block">Ресторан Seafood</h3>
-              <p class="category">Приложение</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/project-prime.jpg" alt="" />
-              <h3 class="name-block">Проект Prime</h3>
-              <p class="category">Маркетинг</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/project-boxes.jpg" alt="" />
-              <h3 class="name-block">Проект Boxes</h3>
-              <p class="category">Приложение</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/inspiration.jpg" alt="" />
-              <h3 class="name-block">Inspiration has no Borders</h3>
-              <p class="category">Веб-сайт</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/limited-edition.jpg" alt="" />
-              <h3 class="name-block">Издание Limited Edition</h3>
-              <p class="category">Дизайн</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/project-lab.jpg" alt="" />
-              <h3 class="name-block">Проект LAB</h3>
-              <p class="category">Маркетинг</p>
-              <p class="description"></p>
-            </a>
-          </li>
-          <li>
-            <a class="link project" href="#">
-              <img src="./images/portfolio/growing-bussiness.jpg" alt="" />
-              <h3 class="name-block">Growing Business</h3>
-              <p class="category">Приложение</p>
-              <p class="description"></p>
-            </a>
-          </li>
-        </ul>
+      <section class="section filter-box">
+        <h1 hidden>Фильтр проектов</h1>
+        <!--фильтр проектов-->
+        <section class="filter">
+          <h2 hidden>Сортировка</h2>
+          <ul class="filter-buttons">
+            <li><button class="filter-button" type="button">Все</button></li>
+            <li><button class="filter-button" type="button">Веб-сайты</button></li>
+            <li><button class="filter-button" type="button">Приложения</button></li>
+            <li><button class="filter-button" type="button">Дизайн</button></li>
+            <li><button class="filter-button" type="button">Маркеттинг</button></li>
+          </ul>
+        </section>
+        <!--блок с проектами-->
+        <section>
+          <h2 hidden>Наши проекты</h2>
+          <ul class="projects">
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/technocrack.jpg"
+                  alt="ноутбук с изображением веб-сайта"
+                  width="370"
+                />
+                <h3 class="name-block">Технокряк</h3>
+                <p class="category">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/poster.jpg"
+                  alt="сопротивление двух баскетболистов"
+                  width="370"
+                />
+                <h3 class="name-block">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                <p class="category">Дизайн</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img src="./images/portfolio/restaurant-seafood.jpg" alt="" width="370" />
+                <h3 class="name-block">Ресторан <span lang="en">Seafood</span></h3>
+                <p class="category">Приложение</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img src="./images/portfolio/project-prime.jpg" alt="Наушники" width="370" />
+                <h3 class="name-block">Проект<span lang="en"> Prime</span></h3>
+                <p class="category">Маркетинг</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/project-boxes.jpg"
+                  alt="Белая и коричневая коробки"
+                  width="370"
+                />
+                <h3 class="name-block">Проект <span lang="en">Boxes</span></h3>
+                <p class="category">Приложение</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/inspiration.jpg"
+                  alt="Монитор от компьютера с веб-сайтом"
+                  width="370"
+                />
+                <h3 class="name-block" lang="en">Inspiration has no Borders</h3>
+                <p class="category">Веб-сайт</p>
+                <p class="description"></p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/limited-edition.jpg"
+                  alt="Открытая книга"
+                  width="370"
+                />
+                <h3 class="name-block">Издание <span lang="en">Limited Edition</span></h3>
+                <p class="category">Дизайн</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/project-lab.jpg"
+                  alt="бирка с названием проекта"
+                  width="370"
+                />
+                <h3 class="name-block">Проект <span lang="en">LAB</span></h3>
+                <p class="category">Маркетинг</p>
+              </a>
+            </li>
+            <li class="filter-list">
+              <a class="link project" href="#">
+                <img
+                  src="./images/portfolio/growing-bussiness.jpg"
+                  alt="ноутбук с изображением приложения"
+                  width="370"
+                />
+                <h3 class="name-block" lang="en">Growing Business</h3>
+                <p class="category">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </section>
       </section>
     </main>
-
     <!--address-->
     <footer class="footer">
       <a lang="en" href="./index.html" class="logo">Web<span class="logo-bot">Studio</span></a>
