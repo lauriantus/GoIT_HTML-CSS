@@ -1,123 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- Логотип, ссылочки, контакты -->
-    <header>
-        <a lang=en href="./index.html"><span>Web</span>Studio</a>
-        <nav>
-            <ul>
-                <li><a class="link-nav" href="/index.html">Студия</a></li>
-                <li><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link-nav" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <header class="header">
+      <a lang="en" href="./index.html" class="logo">Web<span class="logo-main">Studio</span></a>
+      <nav>
+        <ul class="list-nav">
+          <li><a class="link current" href="/index.html">Студия</a></li>
+          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link" href="#">Контакты</a></li>
         </ul>
+      </nav>
+      <ul class="list-auth">
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
     </header>
-<!--
-    box-sort - свойства блока с сортировочными ссылками
-    sort - сортировочные ссылки
 
--->
     <!--Уникальный контент-->
     <main>
-        <!--Сортировка данных на вкладке-->
-        <section class="filter">
-            <ul class="sort">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
+      <!--Сортировка данных на вкладке-->
+      <section class="filter">
+        <ul class="sort">
+          <li><button class="buttons" type="button">Все</button></li>
+          <li><button class="buttons" type="button">Веб-сайты</button></li>
+          <li><button class="buttons" type="button">Приложения</button></li>
+          <li><button class="buttons" type="button">Дизайн</button></li>
+          <li><button class="buttons" type="button">Маркеттинг</button></li>
+        </ul>
+      </section>
 
-        <!--Веб-сайты, дизайн, приложения, маркетинг  и их сортировка-->
-        <section class="box-filter">
-            <h2 class="filter-name"></h2>
-            <ul class="blocks">
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3 class="name-block"></h3>
-                    <p class="category"></p>
-                    <p class="description"></p>
-                </li>
-            </ul>
-        </section>
+      <!--Веб-сайты, дизайн, приложения, маркетинг  и их сортировка-->
+      <section class="box-filter">
+        <h2 class="filter-name"></h2>
+        <ul class="blocks">
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/technocrack.jpg" alt="ноутбука с веб-сайтом" />
+              <h3 class="name-block">Технокряк</h3>
+              <p class="category">Веб-сайт</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/poster.jpg" alt="сопротивление двух баскетболистов" />
+              <h3 class="name-block">Постер New Orlean vs Golden Star</h3>
+              <p class="category">Дизайн</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/restaurant-seafood.jpg" alt="" />
+              <h3 class="name-block">Ресторан Seafood</h3>
+              <p class="category">Приложение</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/project-prime.jpg" alt="" />
+              <h3 class="name-block">Проект Prime</h3>
+              <p class="category">Маркетинг</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/project-boxes.jpg" alt="" />
+              <h3 class="name-block">Проект Boxes</h3>
+              <p class="category">Приложение</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/inspiration.jpg" alt="" />
+              <h3 class="name-block">Inspiration has no Borders</h3>
+              <p class="category">Веб-сайт</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/limited-edition.jpg" alt="" />
+              <h3 class="name-block">Издание Limited Edition</h3>
+              <p class="category">Дизайн</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/project-lab.jpg" alt="" />
+              <h3 class="name-block">Проект LAB</h3>
+              <p class="category">Маркетинг</p>
+              <p class="description"></p>
+            </a>
+          </li>
+          <li>
+            <a class="link project" href="#">
+              <img src="./images/portfolio/growing-bussiness.jpg" alt="" />
+              <h3 class="name-block">Growing Business</h3>
+              <p class="category">Приложение</p>
+              <p class="description"></p>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <!--address-->
-    <footer>
-        <a lang=en href="./index.html"><span class="logo">Web</span>Studio</a>
-        <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/QEpF4U5i566rZsjTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
-                        Леси
-                        Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+      <a lang="en" href="./index.html" class="logo">Web<span class="logo-bot">Studio</span></a>
+      <address>
+        <ul class="list-adress">
+          <li>
+            <a
+              class="link"
+              href="https://goo.gl/maps/QEpF4U5i566rZsjTA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+        </ul>
+      </address>
     </footer>
-</body>
+  </body>
 </html>
