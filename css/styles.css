@@ -1,175 +1,148 @@
-/* Палитра */
+/* переменные */
 :root {
-    /* colors */
-    --primary-text-color: #212121;
-    --accent-text-color: #2196F3;
-    --primary-white-color: #FFFFFF;
-    --secondary-text-color: #757575;
-    --accent-backgroubd-color: #2F303A;
-    --secondary-background-color: #F5F4FA;
+  /* colors */
+  --primary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-text-color: #757575;
+  --accent-backgroubd-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+
+  --primary-font: 'Roboto', sans-serif;
 }
-/* body */
+/* общее */
 body {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  letter-spacing: 0.03em;
 }
+/* отключение маркеров на списках */
+ul {
+  list-style-type: none;
+}
+/* отключение єффектов для ссылок(и логотипа тоже) */
+.link,
+.logo {
+  text-decoration: none;
+}
+/* эффект при наведении или фокусе. Также эффект текущей страницы. */
 .link:hover,
 .link:focus,
 .link.current {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
+  cursor: pointer;
 }
-    /* header */
-    .header {
-        background: var(--primary-white-color);
-    }
-        /* logo */
-        .logo {
-            color: var(--accent-text-color);
-        }
-        .logo-main {
-            color: var(--primary-text-color);
-        }
-        .logo-bot {
-            color: var(--primary-white-color);
-        }
-        /* nav */
-        .list-nav a{
-            color: var(--primary-text-color);
-        }
-        /* auth */
-        .list-auth a{
-            color: var(--secondary-text-color);
-        
-        }
-    /* main */
-    .section {
-        background: var(--secondary-background-color);
-    }
-        /* hero */
-        .hero {
-            background: var(--accent-backgroubd-color);
-            color: var(--primary-white-color);
-        }
-        .button {
-            color: var(--primary-white-color);
-            background: var(--accent-text-color);
-        }
-        /* values */
-        .p-values {
-            color: var(--secondary-text-color);
-        }
-        /* masters */
-        .prof-master {
-            color: var(--secondary-text-color);
-        }
-    .footer {
-        background:var(--accent-backgroubd-color);
-    }
-        .list-adress a{
-            color: var(--secondary-text-color);
-        }
-
-
-/* !!!общее */
-
-    /* шрифт, цвет, отключение эффектов текста, отключение маркеров на всей странице*/
-    body, a, ul, button{
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        list-style-type: none;
-    }
-/* Таб и наведение мышки на ссылки в хэдере */
-   .link:hover, .link:focus {
-       cursor: pointer;
-   }
-/* !header - логотип, навигация по сайту, контакты */        
-    /* логотип и компоненты логотипа*/
-    .logo {
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-    }
-    /* Особенности шрифта в ссылках хэдера */
-    .list-nav, .list-auth {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    }
-/* main */
-    /* hero */
-    .name-hero {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    }
-    .button {
-        font-weight: 700;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    }
-
-/* общее */
-.list-values, .descr, .masters {
-    letter-spacing: 0.03em;
+/* header */
+.header {
+  background: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-    /* values */
-    .names-values {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
+/* logo */
+.logo {
+  color: var(--accent-text-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-main {
+  color: var(--primary-text-color);
+}
+.logo-bot {
+  color: var(--primary-white-color);
+}
+/* nav */
+.list-nav a {
+  color: var(--primary-text-color);
+}
+/* auth */
+.list-auth a {
+  color: var(--secondary-text-color);
+}
+                                                    /* main index.html */
+/* hero */
+.hero {
+  background: var(--accent-backgroubd-color);
+  text-align: center;
+}
+.name-hero {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--primary-white-color);
+  background: var(--accent-text-color);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: inherit;
+}
+/* общее для всех секций */
+.section {
+  background: var(--secondary-background-color);
+}
+/* преимущества (заголовок скрыт, потому отсутствует селектор*/
+.h-values {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.p-values {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* описания работы */
+.name-description {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
 
-        text-transform: uppercase;
-    }
-    .p-values {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-    }
+/* masters */
+.name-masters {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.list-masters {
+  line-height: 1.19em;
+}
+/* фон для группы карточек(в перспективе) */
+ul.list-masters {
+  background: var(--primary-white-color);
+}
+.name-master {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.prof-master {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+/* footer */
+.footer {
+  background: var(--accent-backgroubd-color);
+}
+.list-adress a {
+  font-style: normal;
+  color: var(--secondary-text-color);
+}
 
-    /* description */
-    .name-description {
-        font-size: 36px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-align: center;
-    }
+                                                    /* main portfolio.html */
+.name-block {
+  color: var(--primary-text-color);
+}
 
-    /* masters */
-    .name-masters {
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
-    }
-    .list-masters {
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-    }
-    .name-master {
-        font-weight: 500;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
-    } 
-    .prof-master {
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
-    }
-
-    /* footer */
-    .list-adress {
-
-    }
+.category {
+  color: var(--secondary-text-color);
+}
