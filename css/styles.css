@@ -7,12 +7,9 @@
   --secondary-text-color: #757575;
   --accent-backgroubd-color: #2f303a;
   --secondary-background-color: #f5f4fa;
+  --address-text-color: rgba(255, 255, 255, 0.6);
 
   --primary-font: 'Roboto', sans-serif;
-  --headlines-size: 16px;
-  --primary-text-size: 14px;
-  --headlines-sections-size: 36px;
-  --headlines-sections-weight: 700;
 }
 
 
@@ -20,78 +17,59 @@
 
 
 
-/* стандартный шрифт, расстояние в тексте, цвета текста и фона */
+/* глобальные изменения*/
 body{
   color: var(--primary-text-color);
   font-family: var(--primary-font);
-  background: var(--secondary-background-color);
+  background-color: var(--primary-white-color);
   letter-spacing: 0.03em;
 }
-
-
-
-
-
-/* Цвет, фон и стиль текста для кнопок(общее) */
-.button, .filter-button {
-    border: none;
-    font-family: inherit;
-    font-size: 16px;
-}
-/* Эффект для кнопки в индекс(hero) */
-.button:hover, .button:focus {
+button {
   cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 /* Эффекты для кнопок фильтра(portfolio.html) */
-.filter-button:hover, .filter-button:focus {
-  cursor: pointer;
+.filter-button:hover, 
+.filter-button:focus {
   color: var(--primary-white-color);
-  background: var(--accent-text-color);
+  background-color: var(--accent-text-color);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
               0px 1px 2px rgba(0, 0, 0, 0.08),
               0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-
+/* Изменения в главных заголовках секций */
+.description-title, 
+.work-title, 
+.team-title {
+  font-size: 36px;
+  color: var(--primary-text-color);
+  line-height: 1.17;
+}
 /* отключение маркеров на списках */
-ul {
+.list {
   list-style-type: none;
 }
-
 /* отключение эффектов для ссылок(и логотипа тоже) */
 .link,
-.logo {
+.logo,
+.maps-link {
   text-decoration: none;
 }
-
 /* эффект при наведении или фокусе. Также эффект текущей страницы. */
 .link:hover,
 .link:focus,
 .link.current {
   color: var(--accent-text-color);
 }
-.name-section {
-  font-size: var(--headlines-sections-size);
-  font-weight: var(--headlines-sections-weight);
-  line-height: 1.17;
-  text-align: center;
-}
-
-
 
 
 /* index.html */
-/* header */
-.header {
-  background: var(--primary-white-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-  /* logo */
+  /* header/bottom logo */
   .logo {
     color: var(--accent-text-color);
     font-family: 'Raleway';
@@ -100,26 +78,34 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
+  /* header logo */
   .logo-main {
     color: var(--primary-text-color);
   }
+  /* footer logo */
   .logo-bot {
     color: var(--primary-white-color);
   }
-  /* nav */
-  .list-nav a {
+  /* header-nav */
+  .nav-link, 
+  .contact-link {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
-  /* auth */
-  .list-auth a {
+  /* header-contact */
+  .contact-link {
     color: var(--secondary-text-color);
   }
+
 /* main */
 /* hero */
 .hero {
   background: var(--accent-backgroubd-color);
 }
-  .name-hero {
+  .hero-title {
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -128,7 +114,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
-  .button {
+  .hero-button {
     color: var(--primary-white-color);
     background: var(--accent-text-color);
     font-weight: 700;
@@ -138,46 +124,62 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   }
-/* преимущества (заголовок скрыт, потому отсутствует селектор*/
-  .h-values {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: var(--primary-text-size);
-    line-height: 1.14;
 
+/* description */
+  .description-subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
   }
-  .p-values {
+  .description-text {
     color: var(--secondary-text-color);
-    font-size: var(--primary-text-size);
+    font-size: 14px;
     line-height: 1.71;
   }
-/* описания работы */
 
-/* фон для группы карточек(в перспективе) */
-ul.list-masters {
-  background: var(--primary-white-color);
+/* team */
+.team {
+  background-color: var(--secondary-background-color);
 }
-.list-masters {
-  line-height: 1.19em;
-  text-align: center;
-}
-  .name-master {
+  .team-item {
+    background-color: var(--primary-white-color);
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team-name {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.19em;
   }
-  .prof-master {
+  .team-position {
     color: var(--secondary-text-color);
+    line-height: 1.19em;
   }
+
 /* footer */
 .footer {
   background: var(--accent-backgroubd-color);
 }
-  .list-adress a {
+  .address-list {
     font-style: normal;
-    color: var(--secondary-text-color);
+  }
+  .maps-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-white-color)
+  }
+  .address-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--address-text-color);
   }
 
                                                     /* main portfolio.html */
+
+
 .name-block {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -190,6 +192,7 @@ ul.list-masters {
   color: var(--secondary-text-color);
   line-height: 1.88;
 }
+
 .filter-button {
   font-weight: 500;
   line-height: 1.62;
@@ -198,4 +201,24 @@ ul.list-masters {
 
   background: var(--secondary-background-color);
   border-radius: 4px;
+
+  padding: 6px 22px;
+}
+.filter-button.active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+.project-item {
+  background-color: var(--primary-white-color);
+  border: 1px solid #EEEEEE;
+}
+.project-title {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  color: var(--secondary-text-color);
+  line-height: 1.88;
 }
