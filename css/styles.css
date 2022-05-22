@@ -152,11 +152,11 @@ button {
   .team-name {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.19em;
+    line-height: 1.19;
   }
   .team-position {
     color: var(--secondary-text-color);
-    line-height: 1.19em;
+    line-height: 1.19;
   }
 
 /* footer */
@@ -166,14 +166,15 @@ button {
   .address-list {
     font-style: normal;
   }
-  .maps-link {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--primary-white-color)
-  }
+  .maps-link,
   .address-link {
     font-size: 14px;
     line-height: 1.71;
+  }
+  .maps-link {
+    color: var(--primary-white-color)
+  }
+  .address-link {
     color: var(--address-text-color);
   }
 
